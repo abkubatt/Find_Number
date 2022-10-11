@@ -246,14 +246,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-EQ-5NF">
-                                <rect key="frame" x="138" y="170" width="119" height="33"/>
+                                <rect key="frame" x="117" y="169" width="166" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Новая  игра">
                                             <attributes>
-                                                <font key="NSFont" size="16" name="Helvetica-BoldOblique"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="24" name="Helvetica-BoldOblique"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
