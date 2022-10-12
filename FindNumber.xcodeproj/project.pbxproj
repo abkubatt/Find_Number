@@ -12,6 +12,7 @@
 		A010123028F13E8100C39511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A010122E28F13E8100C39511 /* Main.storyboard */; };
 		A010123228F13E8300C39511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A010123128F13E8300C39511 /* Assets.xcassets */; };
 		A010123528F13E8300C39511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A010123328F13E8300C39511 /* LaunchScreen.storyboard */; };
+		A04010EE28F703F3008F7782 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04010ED28F703F3008F7782 /* YellowViewController.swift */; };
 		A06AE5FA28F1755700926FAA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AE5F928F1755700926FAA /* GameViewController.swift */; };
 		A06AE5FC28F1880600926FAA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AE5FB28F1880600926FAA /* Game.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		A010123128F13E8300C39511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A010123428F13E8300C39511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A010123628F13E8300C39511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A04010ED28F703F3008F7782 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		A06AE5F928F1755700926FAA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A06AE5FB28F1880600926FAA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,7 @@
 				A010123628F13E8300C39511 /* Info.plist */,
 				A06AE5F928F1755700926FAA /* GameViewController.swift */,
 				A06AE5FB28F1880600926FAA /* Game.swift */,
+				A04010ED28F703F3008F7782 /* YellowViewController.swift */,
 			);
 			path = FindNumber;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				A06AE5FA28F1755700926FAA /* GameViewController.swift in Sources */,
 				A010122B28F13E8100C39511 /* SceneDelegate.swift in Sources */,
 				A06AE5FC28F1880600926FAA /* Game.swift in Sources */,
+				A04010EE28F703F3008F7782 /* YellowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
