@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		A010122928F13E8100C39511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010122828F13E8100C39511 /* AppDelegate.swift */; };
 		A010122B28F13E8100C39511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010122A28F13E8100C39511 /* SceneDelegate.swift */; };
-		A010123028F13E8100C39511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A010122E28F13E8100C39511 /* Main.storyboard */; };
 		A010123228F13E8300C39511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A010123128F13E8300C39511 /* Assets.xcassets */; };
 		A010123528F13E8300C39511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A010123328F13E8300C39511 /* LaunchScreen.storyboard */; };
 		A04010EE28F703F3008F7782 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04010ED28F703F3008F7782 /* YellowViewController.swift */; };
 		A06AE5FA28F1755700926FAA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AE5F928F1755700926FAA /* GameViewController.swift */; };
 		A06AE5FC28F1880600926FAA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AE5FB28F1880600926FAA /* Game.swift */; };
+		A06D9EEF28F967290097D289 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06D9EEE28F967290097D289 /* BlueViewController.swift */; };
+		A089C66628F980A000AE4305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A010122E28F13E8100C39511 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A04010ED28F703F3008F7782 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		A06AE5F928F1755700926FAA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A06AE5FB28F1880600926FAA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A06D9EEE28F967290097D289 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				A06AE5F928F1755700926FAA /* GameViewController.swift */,
 				A06AE5FB28F1880600926FAA /* Game.swift */,
 				A04010ED28F703F3008F7782 /* YellowViewController.swift */,
+				A06D9EEE28F967290097D289 /* BlueViewController.swift */,
 			);
 			path = FindNumber;
 			sourceTree = "<group>";
@@ -131,9 +134,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A089C66628F980A000AE4305 /* Main.storyboard in Resources */,
 				A010123528F13E8300C39511 /* LaunchScreen.storyboard in Resources */,
 				A010123228F13E8300C39511 /* Assets.xcassets in Resources */,
-				A010123028F13E8100C39511 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +151,7 @@
 				A06AE5FA28F1755700926FAA /* GameViewController.swift in Sources */,
 				A010122B28F13E8100C39511 /* SceneDelegate.swift in Sources */,
 				A06AE5FC28F1880600926FAA /* Game.swift in Sources */,
+				A06D9EEF28F967290097D289 /* BlueViewController.swift in Sources */,
 				A04010EE28F703F3008F7782 /* YellowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
