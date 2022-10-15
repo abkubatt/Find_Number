@@ -11,9 +11,12 @@
 		A010122B28F13E8100C39511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010122A28F13E8100C39511 /* SceneDelegate.swift */; };
 		A010123228F13E8300C39511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A010123128F13E8300C39511 /* Assets.xcassets */; };
 		A010123528F13E8300C39511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A010123328F13E8300C39511 /* LaunchScreen.storyboard */; };
+		A0183BEC28FAC7FD00D33603 /* SelectTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0183BEB28FAC7FD00D33603 /* SelectTimeViewController.swift */; };
+		A0183BEE28FAC85E00D33603 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0183BED28FAC85E00D33603 /* SettingsTableViewController.swift */; };
 		A04010EE28F703F3008F7782 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04010ED28F703F3008F7782 /* YellowViewController.swift */; };
 		A06AE5FA28F1755700926FAA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AE5F928F1755700926FAA /* GameViewController.swift */; };
 		A06AE5FC28F1880600926FAA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AE5FB28F1880600926FAA /* Game.swift */; };
+		A06C1E8428FAEBEB00EFACC7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C1E8328FAEBEB00EFACC7 /* Settings.swift */; };
 		A06D9EEF28F967290097D289 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06D9EEE28F967290097D289 /* BlueViewController.swift */; };
 		A089C66628F980A000AE4305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A010122E28F13E8100C39511 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,9 +29,12 @@
 		A010123128F13E8300C39511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A010123428F13E8300C39511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A010123628F13E8300C39511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0183BEB28FAC7FD00D33603 /* SelectTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewController.swift; sourceTree = "<group>"; };
+		A0183BED28FAC85E00D33603 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A04010ED28F703F3008F7782 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		A06AE5F928F1755700926FAA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A06AE5FB28F1880600926FAA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A06C1E8328FAEBEB00EFACC7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		A06D9EEE28F967290097D289 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +78,9 @@
 				A06AE5FB28F1880600926FAA /* Game.swift */,
 				A04010ED28F703F3008F7782 /* YellowViewController.swift */,
 				A06D9EEE28F967290097D289 /* BlueViewController.swift */,
+				A0183BEB28FAC7FD00D33603 /* SelectTimeViewController.swift */,
+				A0183BED28FAC85E00D33603 /* SettingsTableViewController.swift */,
+				A06C1E8328FAEBEB00EFACC7 /* Settings.swift */,
 			);
 			path = FindNumber;
 			sourceTree = "<group>";
@@ -151,7 +160,10 @@
 				A06AE5FA28F1755700926FAA /* GameViewController.swift in Sources */,
 				A010122B28F13E8100C39511 /* SceneDelegate.swift in Sources */,
 				A06AE5FC28F1880600926FAA /* Game.swift in Sources */,
+				A0183BEE28FAC85E00D33603 /* SettingsTableViewController.swift in Sources */,
 				A06D9EEF28F967290097D289 /* BlueViewController.swift in Sources */,
+				A06C1E8428FAEBEB00EFACC7 /* Settings.swift in Sources */,
+				A0183BEC28FAC7FD00D33603 /* SelectTimeViewController.swift in Sources */,
 				A04010EE28F703F3008F7782 /* YellowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
