@@ -81,11 +81,25 @@ class GameViewController: UIViewController {
             statusLabel.text = "Вы выйграли"
             statusLabel.textColor = .green
             newGameButton.isHidden = false
+            if game.isNewRecord {
+                showAlert()
+            }
         case .lose:
             statusLabel.text = "Вы проиграли"
             statusLabel.textColor = .red
             newGameButton.isHidden = false
         }
+    }
+    
+    private func showAlert(){
+        
+        let alert = UIAlertController(title: "Поздравляем!", message: "Вы установили новый рекорд!", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction.init(title: "OK", style: .default, handler: nil)
+        
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion: nil)
     }
     
     
