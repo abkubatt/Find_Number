@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="sMN-Is-ckt" customClass="SelectTimeViewController" customModule="FindNumber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="muC-5V-cW6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AbG-PO-bLC">
@@ -58,7 +58,7 @@
         <!--Настройки-->
         <scene sceneID="5Gg-B4-gVj">
             <objects>
-                <tableViewController id="obi-j3-mb8" customClass="SettingsTableViewController" customModule="FindNumber" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="obi-j3-mb8" customClass="SettingsTableViewController" customModule="FindNumber" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="nhe-yS-D85">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,18 +168,39 @@
         <!--Рекорд-->
         <scene sceneID="VQB-VM-ygS">
             <objects>
-                <viewController title="Рекорд" id="Nvt-pf-7K4" sceneMemberID="viewController">
+                <viewController title="Рекорд" id="Nvt-pf-7K4" customClass="RecordViewController" customModule="FindNumber" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kQb-bw-bd1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h5-H3-e0o">
+                                <rect key="frame" x="175" y="381" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hT8-4y-r6w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0h5-H3-e0o" firstAttribute="centerX" secondItem="hT8-4y-r6w" secondAttribute="centerX" id="gTg-MI-GgO"/>
+                            <constraint firstItem="0h5-H3-e0o" firstAttribute="centerY" secondItem="hT8-4y-r6w" secondAttribute="centerY" id="tji-8b-Dcf"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Рекорд" id="GVO-4i-YOy"/>
+                    <navigationItem key="navigationItem" title="Рекорд" id="GVO-4i-YOy">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lFo-xd-BDu">
+                            <connections>
+                                <action selector="closeVC:" destination="Nvt-pf-7K4" id="4WZ-4w-3pc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="recordLabel" destination="0h5-H3-e0o" id="vLY-Rt-XCE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6c-9o-jh2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2866" y="-654"/>
+            <point key="canvasLocation" x="3791.6030534351144" y="-654.22535211267609"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H2B-D0-lJW">
@@ -240,7 +261,7 @@
                                             </attributedString>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="obi-j3-mb8" kind="show" id="BIN-Mq-i8t"/>
+                                            <segue destination="obi-j3-mb8" kind="presentation" id="BIN-Mq-i8t"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZG-qa-LQB">
@@ -257,7 +278,7 @@
                                             </attributedString>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="Nvt-pf-7K4" kind="show" id="rcd-am-QGh"/>
+                                            <segue destination="aS9-LN-raC" kind="presentation" modalPresentationStyle="fullScreen" id="rcd-am-QGh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -285,7 +306,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bVf-ZH-PjX">
-                                <rect key="frame" x="117.66666666666669" y="123" width="158" height="170"/>
+                                <rect key="frame" x="114.00000000000001" y="123" width="165.33333333333337" height="170"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Игра началась" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REJ-eb-u5b">
                                         <rect key="frame" x="0.0" y="0.0" width="157.66666666666666" height="50"/>
@@ -313,7 +334,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-EQ-5NF">
-                                        <rect key="frame" x="0.0" y="170" width="165.33333333333334" height="50"/>
+                                        <rect key="frame" x="0.0" y="312.66666666666669" width="165.33333333333334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="94V-Cs-kGG"/>
                                         </constraints>
@@ -562,9 +583,11 @@
                         <constraints>
                             <constraint firstItem="bVf-ZH-PjX" firstAttribute="centerX" secondItem="tiz-gx-Ekk" secondAttribute="centerX" id="IdW-1x-79p"/>
                             <constraint firstItem="dYM-hB-Kni" firstAttribute="top" secondItem="bVf-ZH-PjX" secondAttribute="bottom" constant="9" id="SqK-SK-eds"/>
+                            <constraint firstItem="jHl-EQ-5NF" firstAttribute="centerY" secondItem="tiz-gx-Ekk" secondAttribute="centerY" id="TMD-fN-JCt"/>
                             <constraint firstItem="tiz-gx-Ekk" firstAttribute="bottom" secondItem="dYM-hB-Kni" secondAttribute="bottom" constant="9" id="VPf-KN-9aO"/>
                             <constraint firstItem="bVf-ZH-PjX" firstAttribute="top" secondItem="tiz-gx-Ekk" secondAttribute="top" constant="20" id="bsg-Bj-0Rn"/>
                             <constraint firstItem="tiz-gx-Ekk" firstAttribute="trailing" secondItem="dYM-hB-Kni" secondAttribute="trailing" constant="9" id="h84-x6-niz"/>
+                            <constraint firstItem="jHl-EQ-5NF" firstAttribute="centerX" secondItem="tiz-gx-Ekk" secondAttribute="centerX" id="wyU-HV-FZq"/>
                             <constraint firstItem="dYM-hB-Kni" firstAttribute="leading" secondItem="tiz-gx-Ekk" secondAttribute="leading" constant="9" id="yss-Mg-AYh"/>
                         </constraints>
                     </view>
@@ -590,13 +613,35 @@
                         <outletCollection property="buttons" destination="Zgb-3y-Ihf" collectionClass="NSMutableArray" id="Bhx-jC-PD4"/>
                         <outletCollection property="buttons" destination="EnF-Ou-3wS" collectionClass="NSMutableArray" id="DXt-Da-UPX"/>
                         <outletCollection property="buttons" destination="48S-nY-3qR" collectionClass="NSMutableArray" id="OBR-DP-Z2e"/>
+                        <segue destination="aS9-LN-raC" kind="presentation" identifier="recordVC" modalPresentationStyle="fullScreen" id="6UR-2N-3XN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dle-HH-YPq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3704.5801526717555" y="35.91549295774648"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gru-8Q-RbQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aS9-LN-raC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CyY-RH-9E8">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nvt-pf-7K4" kind="relationship" relationship="rootViewController" id="ZyD-1d-0yP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUG-Ji-3fj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2864.8854961832062" y="-654.22535211267609"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rcd-am-QGh"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

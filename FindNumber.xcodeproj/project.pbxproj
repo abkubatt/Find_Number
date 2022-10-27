@@ -18,6 +18,7 @@
 		A06AE5FC28F1880600926FAA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06AE5FB28F1880600926FAA /* Game.swift */; };
 		A06C1E8428FAEBEB00EFACC7 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06C1E8328FAEBEB00EFACC7 /* Settings.swift */; };
 		A06D9EEF28F967290097D289 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06D9EEE28F967290097D289 /* BlueViewController.swift */; };
+		A073D254290AD1EF00B1D094 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073D253290AD1EF00B1D094 /* RecordViewController.swift */; };
 		A089C66628F980A000AE4305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A010122E28F13E8100C39511 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		A06AE5FB28F1880600926FAA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A06C1E8328FAEBEB00EFACC7 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		A06D9EEE28F967290097D289 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		A073D253290AD1EF00B1D094 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				A0183BEB28FAC7FD00D33603 /* SelectTimeViewController.swift */,
 				A0183BED28FAC85E00D33603 /* SettingsTableViewController.swift */,
 				A06C1E8328FAEBEB00EFACC7 /* Settings.swift */,
+				A073D253290AD1EF00B1D094 /* RecordViewController.swift */,
 			);
 			path = FindNumber;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				A0183BEE28FAC85E00D33603 /* SettingsTableViewController.swift in Sources */,
 				A06D9EEF28F967290097D289 /* BlueViewController.swift in Sources */,
 				A06C1E8428FAEBEB00EFACC7 /* Settings.swift in Sources */,
+				A073D254290AD1EF00B1D094 /* RecordViewController.swift in Sources */,
 				A0183BEC28FAC7FD00D33603 /* SelectTimeViewController.swift in Sources */,
 				A04010EE28F703F3008F7782 /* YellowViewController.swift in Sources */,
 			);

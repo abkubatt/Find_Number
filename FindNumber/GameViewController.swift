@@ -83,11 +83,14 @@ class GameViewController: UIViewController {
             newGameButton.isHidden = false
             if game.isNewRecord {
                 showAlert()
+            }else{
+                showAlertActionSheet()
             }
         case .lose:
             statusLabel.text = "Вы проиграли"
             statusLabel.textColor = .red
             newGameButton.isHidden = false
+            showAlertActionSheet()
         }
     }
     
@@ -99,6 +102,34 @@ class GameViewController: UIViewController {
         
         alert.addAction(okAction)
         
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func showAlertActionSheet(){
+        let alert = UIAlertController(title: "Что вы хотите делать далее ?", message: nil, preferredStyle: .actionSheet)
+        
+        let newGameAction = UIAlertAction(title: "Начать новую игру", style: .default) {[weak self] (_) in
+            self?.game.newGame()
+            self?.setupScreen()
+        }
+        
+        let showRecord = UIAlertAction(title: "Посмотреть рекорд", style: .default){[weak self](_)in
+            self?.performSegue(withIdentifier: "recordVC", sender: nil)
+            //TODO - RECORT VIEW CONTROLLER
+        }
+        
+        let menuAction = UIAlertAction(title: "Перейти в меню", style: .destructive){[weak self] (_) in self?.navigationController?.popViewController(animated: true)}
+        
+        let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
+        
+        alert.addAction(newGameAction)
+        alert.addAction(showRecord)
+        alert.addAction(menuAction)
+        alert.addAction(cancelAction)
+        
+        if let popover = alert.popoverPresentationController{
+            popover.sourceView = statusLabel
+        }
         present(alert, animated: true, completion: nil)
     }
     
